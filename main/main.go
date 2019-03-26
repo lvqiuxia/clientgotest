@@ -17,9 +17,9 @@ func main(){
 	}
 	fmt.Println("Get Clientset successful")
 
-	//创建socket
-	rest.InitRestSocket(clientSet)
-
+	//创建http socket
+	//rest.InitHttpSocket(clientSet)
+	rest.InitFastHttpSocket(clientSet)
 	////防止主进程退出
 	//ch := make(chan int )
 	//select {
